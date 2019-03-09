@@ -1,0 +1,24 @@
+#navLinks{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #76b4fc;
+    border: 1px solid darkgray;
+}
+
+.liNavLink{
+    float: left;
+    display: block;
+    width: 95px;
+    height: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    border-right: 1px solid black;
+}
+
+.liNavLink:hover{
+    background-color: rgba(12, 187, 12, 0.89);
+    -webkit-text-fill-color: white;
+    font-size: 120%;
+}
