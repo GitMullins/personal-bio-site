@@ -8,3 +8,15 @@ body{
     font-size: 175%;
 }
 
+.fullPage{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+    width: 30%;
+}
