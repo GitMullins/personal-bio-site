@@ -40,32 +40,34 @@ const projectsClick = () => {
         domString += `<p>GitHubURL: <a href="https://github.com/GitMullins">${projects[i].githubUrl}</a></p>`;
         domString += '</h4></div>'
     }
-    printToDom('projectsPage', domString);
+    printToDom('projectsFill', domString);
+    if (document.getElementById('bioPage')){
+    remove('bioPage');};
+    if (document.getElementById('technologiesPage')){
+    remove('technologiesPage');};
 }
 };
 
 const bioClick = () => {
-    let message = `<div class='card' id='background'>
+    let message = `<div class='card' id='bioPage'>
     <h3><u><b>My Background:</b></u></h3>
     <b>Current employer:</b> Tennessee Dept. of Revenue<br>
     <b>Job Title:</b> Tax Auditor (Nov. 2014 - current)<br>
     Revenue Officer (Jan. 2013 - October 2013)<br>
-    </div>
-    <div class='card' id='loveDev'>
     <h3><u><b>What I love about development:</b></u></h3>
     I love problem solving, and I love that development can be basic or complex depending on the project. The field offers a limitless amount of possibilities to solve a problem, and techniques vary between developers. Development allows me to problem-solve and create solutions that I see the most value in.
-    </div>
-    <div class='card' id='whyDev'>
     <h3><u><b>Why I want to go into development:</b></u></h3>
-    I enjoy creating efficiency: I recognize the value in making jobs easier, automizing tasks, and gathering/providing useful data. I also have a unique interest in solving problems or creating something that can benefit a lot of people. <br> 
+    I enjoy creating efficiency: I recognize the value in making jobs easier, automatized tasks, and gathering/providing useful data. I also have a unique interest in solving problems or creating something that can benefit a lot of people. <br> 
     </div>`;
         printToDom('bioFill', message);
-        remove('technologiesPage');
-        remove('projectsPage');
+        if (document.getElementById('technologiesPage')){
+        remove('technologiesPage');};
+        if (document.getElementById('projectsPage')){
+        remove('projectsPage');};
 };
 
 const techClick = () => {
-    let message = `  <div class="fullPage" id="technologiesPage">
+    let message = `<div class="fullPage" id="technologiesPage">
     <h2><b><u>Technologies:</u></b></h2>
     <ul>
     <li>GitBash</li>
@@ -73,9 +75,10 @@ const techClick = () => {
     <li>JavaScript</li>
     </ul></div>`
         printToDom('techFill', message);
-        remove('projectsPage');
-        remove('bioFill')
-
+        if (document.getElementById('projectsPage')){
+        remove('projectsPage');};
+        if (document.getElementById('bioPage')){
+        remove('bioPage');};
 };
 
 
