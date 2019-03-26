@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel='stylesheet' href='./main.css'>
   <link rel='stylesheet' href="./navBar.css">
     <title>David Mullins- Projects Page</title>
@@ -15,9 +16,9 @@
   <nav>
     <h1 id="davidMullins">DAVID MULLINS</h1>
     <ul id="navLinks">
-      <li class="liNavLink"><a id="navToBio">BIO</a></li>
-      <li class="liNavLink"><a id="navToTechnologies">TECHNOLOGIES</a></li>
-      <li class="liNavLink"><a id="navToProjects">PROJECTS</a></li>
+      <button type="button" class="liNavLink" id='navToBio'>BIO</button>
+      <button type="button" class="liNavLink" id="navToTechnologies">TECHNOLOGIES</button>
+      <button type='button' class="liNavLink" id="navToProjects">PROJECTS</button>
     </ul>
   </nav>
   <!-- End Navigation -->
@@ -27,30 +28,14 @@
     <div class='card'>
       <img src='./Me.png'></img>
     </div>
-    <div class='card'>
-      <h3><u><b>My Background:</b></u></h3>
-      <b>Current employer:</b> Tennessee Dept. of Revenue<br>
-      <b>Job Title:</b> Revenue Officer (Jan. 2013 - October 2013)<br>
-      Tax Auditor (Jan. 2014 - current)<br>
+
+    <div id='bioFill'></div>
+
+    <div id='techFill'></div>
+
     </div>
-    <div class='card'>
-      <h3><u><b>Why I want to go into development:</b></u></h3>
-      I enjoy creating efficiency: I recognize the value in making jobs easier, automizing tasks, and gathering/providing useful data. I also have a unique interest in solving problems or creating something that can benefit a lot of people. <br> 
-    </div>
-    <div class='card'>
-      <h3><u><b>What I love about development:</b></u></h3>
-      I love problem solving. I love that development can be basic or complex depending on the project. The field offers a limitless amount of possibilities to solve a problem, and techniques vary between developers. Development allows me to problem-solve and create solutions that I see the most value in.
-    </div>
-    </div>
-  <div class="fullPage" id="technologiesPage">
-      <h2><b><u>Technologies:</u></b></h2>
-    <ul>
-        <li>GitBash</li>
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
-    </ul>
-  </div>
-  <div class="fullPage" id="projectsPage"></div>
+
+    <div class="fullPage" id="projectsPage"></div>
   <!-- End Primary View -->
 
   <!-- Footer -->
@@ -60,5 +45,13 @@
   </footer>
   <!-- End Footer -->
   <script src='projects.js'></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<!-- <script>
+document.getElementById('navToBio').addEventListener('click', bioClick);
+
+</script> -->
+
 </body>
 </html>
