@@ -13,7 +13,7 @@ $ git clone https://github.com/GitMullins/personal-bio-site
 $ npm install -g http-server
 ```
 ## Running
-Browse to pie directory and run http server  
+Browse to personal-bio-site directory and run http server  
 ```
 $ hs -p 5000
 ```
