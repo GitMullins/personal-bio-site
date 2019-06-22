@@ -1,5 +1,5 @@
 import 'bootstrap';
-import '../styles/main.scss';
+import '../../styles/main.scss';
 
 const projects = [
   {
