@@ -1,0 +1,29 @@
+{
+  "projects": [{
+      "title": "Cool Project",
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+      "description": "This is the best project', // A good project description includes 'the what', 'the why', and 'the how'.",
+      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "available": true,
+      "url": "https://github.com/GitMullins",
+      "githubUrl": "https://github.com/GitMullins"
+    },
+    {
+      "title": "123",
+      "screenshot": "456",
+      "description": "789",
+      "technologiesUsed": "000",
+      "available": true,
+      "url": "222",
+      "githubUrl1": "333"
+    },
+    {
+    "title": "111",
+    "screenshot": "111",
+    "description": "111",
+    "technologiesUsed": "111",
+    "available": true,
+    "url": "111",
+    "githubUrl1": "111"
+  }]
+}
