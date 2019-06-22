@@ -1,10 +1,10 @@
-// import myNavBar from './components/myNavBar/myNavBar';
+import projects from './components/projects';
 
 import 'bootstrap';
 import '../styles/main.scss';
 
 const init = () => {
-  myNavBar.navbarEvents();
+  projects.init();
 };
 
 init();
