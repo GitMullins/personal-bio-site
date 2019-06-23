@@ -1,8 +1,10 @@
 import axios from 'axios';
+import apiKeys from './apiKeys.json';
 
-const firebaseUrl = 'https://personal-bio-site-9526f.web.app';
+const firebaseUrl = apiKeys.firebaseKeys.databaseURL;
 
 const getAllProjects = () => new Promise((resolve, reject) => {
+
   axios.get(`${firebaseUrl}/projects.json`)
     .then((results) => {
       const projectResults = results.data;
