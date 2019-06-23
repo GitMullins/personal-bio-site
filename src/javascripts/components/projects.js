@@ -1,29 +1,58 @@
-import projects from './components/projects';
-
 import 'bootstrap';
-import '../styles/main.scss';
+import '../../styles/main.scss';
 
-import projectsData from './helpers/data/projectsData';
+const projects = [
+  {
+    title: 'Cool Project',
+    screenshot: 'http://gotoflashgames.com/files/file/033.jpg',
+    description: 'This is the best project', // A good project description includes 'the what', 'the why', and 'the how'.
+    technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
+    available: true,
+    url: 'https://github.com/GitMullins',
+    githubUrl: 'https://github.com/GitMullins',
+  },
+  {
+    title: '123',
+    screenshot: '456',
+    description: '789',
+    technologiesUsed: '000',
+    available: false,
+    url: '222',
+    githubUrl1: '333',
+  },
+];
 
 const printToDom = (id, print) => {
   document.getElementById(id).innerHTML = print;
 };
 
-const projectsClick = (projects) => {
+const remove = (divId) => {
+  document.getElementById(divId).remove();
+};
+
+const projectsClick = () => {
   let domString = '';
-  projects.forEach((project) => {
-    if (project.available === true) {
+  for (let i = 0; i < projects.length; i + 1) {
+    if (projects[i].available === true) {
       domString += '<div id="projectsPage"><h4>';
-      domString += `<p>Title: ${project.title}</p>`;
-      domString += `<img src="${project.screenshot}">`;
-      domString += `<p>Description: ${project.description}</p>`;
-      domString += `<p>Technologies Used: ${project.technologiesUsed}</p>`;
-      domString += `<p>URL: ${project.url}</p>`;
-      domString += `<p>GitHubURL: <a href="https://github.com/GitMullins">${project.githubUrl}</a></p>`;
+      domString += `<p>Title: ${projects[i].title}</p>`;
+      domString += `<p>Screenshot: ${projects[i].screenshot}</p>`;
+      domString += `<p>Description: ${projects[i].description}</p>`;
+      domString += `<p>Technologies Used: ${projects[i].technologiesUsed}</p>`;
+      domString += `<p>URL: ${projects[i].url}</p>`;
+      domString += `<p>GitHubURL: <a href="https://github.com/GitMullins">${projects[i].githubUrl}</a></p>`;
       domString += '</h4></div>';
     }
-  });
-  printToDom('projectsFill', domString);
+    printToDom('projectsFill', domString);
+    if (document.getElementById('bioPage')) {
+      remove('bioPage');
+      remove('bioPage');
+      remove('bioPage');
+    }
+    if (document.getElementById('technologiesPage')) {
+      remove('technologiesPage');
+    }
+  }
 };
 
 const bioClick = () => {
@@ -45,6 +74,12 @@ const bioClick = () => {
     I also have a unique interest in solving problems or creating something that can benefit a lot of people.</p>
     </div>`;
   printToDom('bioFill', message);
+  if (document.getElementById('technologiesPage')) {
+    remove('technologiesPage');
+  }
+  if (document.getElementById('projectsPage')) {
+    remove('projectsPage');
+  }
 };
 
 const techClick = () => {
@@ -56,6 +91,14 @@ const techClick = () => {
     <li>JavaScript</li>
     </ul></div>`;
   printToDom('techFill', message);
+  if (document.getElementById('projectsPage')) {
+    remove('projectsPage');
+  }
+  if (document.getElementById('bioPage')) {
+    remove('bioPage');
+    remove('bioPage');
+    remove('bioPage');
+  }
 };
 
 
@@ -66,11 +109,6 @@ const navBtns = () => {
 };
 
 const init = () => {
-  bioClick();
-  techClick();
-  projectsData.getAllProjects()
-    .then(projects => projectsClick(projects))
-    .catch(err => console.error('no projects', err));
   navBtns();
 };
 
