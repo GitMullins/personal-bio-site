@@ -34,7 +34,7 @@ const projectsClick = (projects) => {
     if (project.available === true) {
       domString += '<div id="projectsPage"><h4>';
       domString += `<p>Title: ${project.title}</p>`;
-      domString += `<p>Screenshot: ${project.screenshot}</p>`;
+      domString += `<img src="${project.screenshot}">`;
       domString += `<p>Description: ${project.description}</p>`;
       domString += `<p>Technologies Used: ${project.technologiesUsed}</p>`;
       domString += `<p>URL: ${project.url}</p>`;
