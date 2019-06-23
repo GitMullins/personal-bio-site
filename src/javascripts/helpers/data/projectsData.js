@@ -1,7 +1,6 @@
 import axios from 'axios';
-import apiKeys from 'UNABLE TO PATH';
 
-const firebaseUrl = apiKeys.firebaseKeys.databaseURL;
+const firebaseUrl = 'https://personal-bio-site-9526f.firebaseio.com';
 
 const getAllProjects = () => new Promise((resolve, reject) => {
   axios.get(`${firebaseUrl}/projects.json`)
