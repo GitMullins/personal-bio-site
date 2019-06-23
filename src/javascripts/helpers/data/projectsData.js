@@ -4,7 +4,6 @@ import apiKeys from './apiKeys.json';
 const firebaseUrl = apiKeys.firebaseKeys.databaseURL;
 
 const getAllProjects = () => new Promise((resolve, reject) => {
-
   axios.get(`${firebaseUrl}/projects.json`)
     .then((results) => {
       const projectResults = results.data;
