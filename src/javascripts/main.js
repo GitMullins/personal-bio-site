@@ -16,8 +16,8 @@ const projectsClick = (projects) => {
       domString += `<img src="${project.screenshot}">`;
       domString += `<p>Description: ${project.description}</p>`;
       domString += `<p>Technologies Used: ${project.technologiesUsed}</p>`;
-      domString += `<p>URL: ${project.url}</p>`;
-      domString += `<p>GitHubURL: <a href="https://github.com/GitMullins">${project.githubUrl}</a></p>`;
+      domString += `<p>Project URL: <a href="${project.url}">Here</a></p>`;
+      domString += `<p>GitHubURL: <a href="${project.githubUrl}">Here</a></p>`;
       domString += '</h4></div>';
     }
   });

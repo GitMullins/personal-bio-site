@@ -1,31 +1,20 @@
 @import "~bootstrap/scss/bootstrap";
 
+#davidMullins{
+  text-align: center;
+  font-size: 300%;
+}
+
 body{
     background-color: antiquewhite;
 }
 
-#davidMullins{
-    text-align: center;
-    font-family: 'times new roman', monospace;
-    font-size: 175%;
-}
-
-.fullPage{
-  padding: 10;
-  margin: 10;
-  list-style: none;
-
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-around; */
-  width: 100%;
-}
-
-
-img{
-    padding: 10px;
+#imgMe{
+  float: left;
+  margin-right: 10px;
 }
 
 .card{
+  margin-left: 10px;
     max-width: 33%;
 }
