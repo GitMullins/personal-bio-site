@@ -6,15 +6,26 @@
 }
 
 body{
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 #imgMe{
   float: left;
-  margin-right: 10px;
+  margin-bottom: 250%;
+  margin-right: 50px;
+}
+
+.container{
+  flex-direction: column;
 }
 
 .card{
-  margin-left: 10px;
-    max-width: 33%;
+  background-color: antiquewhite;
+  border: none;
+  margin: 30px;
+  max-width: 60%;
+}
+
+.page-footer{
+  text-align: center;
 }
