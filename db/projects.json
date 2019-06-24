@@ -14,8 +14,8 @@
       "description": "This app is a game simulator for a pet's health. The health updates via javascript and displays per button click.",
       "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Task Runner via Webpack, Deployment with Firebase",
       "available": true,
-      "url": "222",
-      "githubUrl1": "https://github.com/GitMullins/Tamagotchi"
+      "url": "https://tamagotchi-5166e.web.app/",
+      "githubUrl": "https://github.com/GitMullins/Tamagotchi"
     },
     {
     "title": "Temperature Converter",
@@ -23,7 +23,7 @@
     "description": "This app converts a temperature (using math equations in javascript) from fahrenheit to celsius or from celsius to fahrenheit. The display color of the converted temperature also changes to show the use of altering elements based on output value. If the temperature is greater than 90F/32C the color of the converted temperature will be red. If the temperature is less than 32F/0C the color of the converted temperature will be blue. All other temperatures will be green.",
     "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Task Runner via Webpack, Deployment with Firebase",
     "available": true,
-    "url": "111",
-    "githubUrl1": "https://github.com/GitMullins/temperature-converter"
+    "url": "https://temperature-converter-7a3a5.web.app/",
+    "githubUrl": "https://github.com/GitMullins/temperature-converter"
   }]
 }
