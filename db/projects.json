@@ -5,7 +5,7 @@
       "description": "This is an app to keep track of a user's movies, watchlist, and watched movies. Movies can be added via the 'Add Movie' button in the navbar. Movies can then be added to the watchlist (via axios calls). After the movie has been watched it can be rated which will add the movie to the 'watched movies' section.",
       "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Task Runner via Webpack, Deployment with Firebase",
       "available": true,
-      "url": "https://movie-history-9ff74.web.app/",
+      "url": "https://movie-history-b6cd8.web.app/",
       "githubUrl": "https://github.com/GitMullins/movie-history"
     },
     {
