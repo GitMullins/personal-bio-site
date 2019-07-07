@@ -9,6 +9,15 @@
       "githubUrl": "https://github.com/GitMullins/movie-history"
     },
     {
+      "title": "Doggie Daycare",
+      "screenshot": "https://raw.githubusercontent.com/GitMullins/doggie-daycare/master/src/img/screenshot.PNG",
+      "description": "This is an app to schedule walks of employees and dogs. Page loading and all events are done via components in ReactJS. Choose from the dropdowns to create scheduled walks with the available dogs/employees",
+      "technologiesUsed": "HTML, SCSS, ReactJS, Version Control with Github, Deployment with Firebase",
+      "available": true,
+      "url": "react-hoarder-56e47.web.app",
+      "githubUrl": "https://github.com/GitMullins/dogg-daycare"
+    },
+    {
       "title": "Tamagotchi",
       "screenshot": "https://raw.githubusercontent.com/GitMullins/Tamagotchi/master/src/img/screenshot.png",
       "description": "This app is a game simulator for a pet's health. The health updates via javascript and displays per button click.",
@@ -19,7 +28,7 @@
     },
     {
     "title": "Temperature Converter",
-    "screenshot": "https://raw.githubusercontent.com/GitMullins/temperature-converter/master/screenshots/greenDisplay.png",
+    "screenshot": "https://raw.githubusercontent.com/GitMullins/temperature-converter/master/public/screenshots/greenDisplay.png",
     "description": "This app converts a temperature (using math equations in javascript) from fahrenheit to celsius or from celsius to fahrenheit. The display color of the converted temperature also changes to show the use of altering elements based on output value. If the temperature is greater than 90F/32C the color of the converted temperature will be red. If the temperature is less than 32F/0C the color of the converted temperature will be blue. All other temperatures will be green.",
     "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Task Runner via Webpack, Deployment with Firebase",
     "available": true,
